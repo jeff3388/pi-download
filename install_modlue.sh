@@ -9,18 +9,6 @@ sudo ./configure && sudo make && sudo make install
 sudo mv /usr/bin/python /usr/bin/python3.4.2
 sudo ln -s /usr/local/bin/python3 /usr/bin/python
 
-sudo apt-get install iceweasel
-sudo apt-get install xvfb
-pip install selenium
-pip install PyVirtualDisplay
-pip install xvfbwrapper
-
-wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-arm7hf.tar.gz
-tar -xf geckodriver-v0.19.1-arm7hf.tar.gz
-rm geckodriver-v0.19.1-arm7hf.tar.gz
-sudo chmod a+x geckodriver
-sudo mv geckodriver /usr/local/bin/
-
 pip install beautifulsoup4
 pip install fake-useragent
-fi
+pip install selenium
